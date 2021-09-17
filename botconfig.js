@@ -22,11 +22,11 @@ module.exports = {
   //Lavalink
   Lavalink: {
     id: "Main",
-    host: "lava.link",
-    port: 80,
-    pass: "anything as a password",
-    secure: false,
-    retrydelay: 15000
+    host: process.env.LavaHost|| "lava.link",
+    port: process.env.LavaPort || 80,
+    pass: process.env.LavaPass || "anything as a password",
+    secure: process.env.Lavasecure || false,
+    retrydelay: process.env.Lavaretrydelay|| 15000
   },
 
 
